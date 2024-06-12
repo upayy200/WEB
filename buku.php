@@ -8,7 +8,6 @@ if (isset($_POST['add'])) {
     $rak = $_POST['rak'];
     $jumlah = $_POST['jumlah']; // Tambahkan input untuk jumlah buku
     $sql = "INSERT INTO buku (judul, pengarang, rak, jumlah) VALUES ('$judul', '$pengarang', '$rak', '$jumlah')";
-    $conn->query($sql);
 }
 
 // Handle Delete Buku
